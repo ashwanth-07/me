@@ -1,492 +1,259 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ashwanth Kuppusamy | Machine Learning Engineer</title>
 
-   <meta charset="utf-8">
-	<title>Ashwanth Kuppusamy</title>
-	<meta name="description" content="Ashwanth's Portfolio Website">  
-	<meta name="author" content="Ashwanth Kuppusamy">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
- 	<!-- CSS
-   ================================================== -->
-   <link rel="stylesheet" href="css/base.css">  
-   <link rel="stylesheet" href="css/main.css">
-   <link rel="stylesheet" href="css/vendor.css">  
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
-   <!-- script
-   ================================================== -->   
-	<script src="js/modernizr.js"></script>
-	<script src="js/pace.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-   <!-- favicons
-	================================================== -->
-	<link rel="icon" type="image/png" href="favicon.png">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
 
 </head>
+<body data-bs-spy="scroll" data-bs-target="#mainNavbar" data-bs-offset="100">
 
-<body id="top">
-
-	<!-- header 
-   ================================================== -->
-	<header class="navigation-header">
-        <nav>
-            <div class="logo-container">
-                <a href="./index.html">Portfolio.</a>
+    <nav id="mainNavbar" class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-4" href="#home">Ashwanth K.</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item mx-2"><a class="nav-link fs-5" href="#home">Home</a></li>
+                    <li class="nav-item mx-2"><a class="nav-link fs-5" href="#about">About</a></li>
+                    <li class="nav-item mx-2"><a class="nav-link fs-5" href="#work-highlights">Experience</a></li>
+                    <li class="nav-item mx-2"><a class="nav-link fs-5" href="#projects">Projects</a></li>
+                    <li class="nav-item mx-2"><a class="nav-link fs-5" href="#contact">Contact</a></li>
+                </ul>
+                <div class="theme-switch-wrapper d-flex align-items-center ms-lg-3">
+                    <label class="theme-switch" for="theme-toggle-checkbox">
+                        <input type="checkbox" id="theme-toggle-checkbox" />
+                        <div class="slider round">
+                            <span class="handle">
+                                <i class="fas fa-moon handle-icon moon-icon"></i>
+                                <i class="fas fa-sun handle-icon sun-icon"></i>
+                            </span>
+                        </div>
+                    </label>
+                </div>
             </div>
-            <div class="navigation-items" id="navigation-items">
-				<a href="#intro">Home</a>
-				<a href="#about">About</a>
-				<a href="#resume">Resume</a>
-				<a href="#portfolio">Projects</a>
-				<a href="#contact">Contact Me</a>
+        </div>
+    </nav>
+
+    <section id="home" class="min-vh-100 d-flex align-items-center" style="padding-top: 80px;">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-7 text-center text-md-start mb-5 mb-md-0" data-aos="fade-right">
+                    <p class="mb-2 fs-5 text-accent">Hello, I'm</p>
+                    <h1 class="display-3 fw-bold mb-3">Ashwanth <span class="text-accent">Kuppusamy</span></h1>
+                    <h2 class="h3 fw-normal mb-4"><span id="typed-text"></span></h2>
+                    <p class="lead mb-4">
+                        A results-oriented Machine Learning Engineer specializing in the full model development lifecycle. I leverage expertise in continual learning, pretraining, and MLOps to build efficient and scalable computer vision solutions.
+                    </p>
+                    <a href="assets/resume.pdf" target="_blank" class="btn btn-primary btn-lg me-2 mb-2">Download CV</a>
+                    <a href="#projects" class="btn btn-outline-primary btn-lg me-2 mb-2">View My Work</a>
+                    <div class="mt-4 social-icons">
+                        <a href="https://www.linkedin.com/in/ashwanthkuppusamy/" target="_blank" aria-label="LinkedIn Profile"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/ashwanth-07" target="_blank" aria-label="GitHub Profile"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-5 text-center d-none d-md-block" data-aos="fade-left" data-aos-delay="200">
+                    <img src="assets/profile-pic.jpg" alt="Ashwanth Kuppusamy" class="img-fluid rounded-circle shadow-lg hero-img">
+                </div>
             </div>
-            <div class="hamburger">
-                <span id="openHam">&#9776;</span>
-                <span id="closeHam">&#x2716;</span>
+        </div>
+    </section>
+
+    <section id="about" class="section-padding">
+        <div class="container text-center">
+            <h2 class="display-5 fw-bold mb-4" data-aos="fade-up">About Me</h2>
+            <div class="row">
+                <div class="col-lg-8 mx-auto" data-aos="fade-up" data-aos-delay="100">
+                    <p class="lead mb-5">
+                        I am passionate about tackling complex challenges in computer vision. My experience includes designing automated labeling frameworks, optimizing training pipelines on large-scale datasets, and architecting end-to-end MLOps solutions. I specialize in enhancing model performance through techniques like continual learning, domain adaptation, and advanced pretraining to solve real-world problems.
+                    </p>
+                </div>
             </div>
-        </nav>	
-   </header> <!-- /header -->
-
-	<!-- intro section
-   ================================================== -->
-   <section id="intro">   
-
-	<div class="intro-overlay"></div>   
-	   <div class="intro-content">
-	   	<div class="row">
-		  <div class="col-twelve">
-			 <h5>Hello, There!</h5>
-			 <h2>I'm Ashwanth</h2>
-			 <p class="intro-position">
-				<span>Machine Learning Engineer</span>
-				<span>Computer Vision</span> 
-			 </p><br/>
-			 <a class="button stroke smoothscroll" href="#about" title="">More About Me</a>
-		  </div>     
-	   </div>             
-	</div>
-
-   	<ul class="intro-social">        
-         <li><a href="https://www.linkedin.com/in/ashwanth-kuppusamy-b031b019a/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-         <li><a href="https://github.com/ashwanth-07" target="_blank"><i class="fa fa-github"></i></a></li>
-         <li><a href="#"><i class="fa fa-globe"></i></a></li>
-      </ul> <!-- /intro-social -->      	
-
-   </section> <!-- /intro -->
-
-
-   <!-- about section
-   ================================================== -->
-   <section id="about">  
-	<div class="row section-intro">
-	   <div class="col-twelve">
-		  <h5 style="color: #3772ff;">About</h5>
-		  <h1>Let me introduce myself.</h1>
-		  <div class="intro-info">
-			 <img src="images/profile-pic.jpg" alt="Profile Picture">
-			 <p class="lead">I'm a Machine Learning Engineer specializing in computer vision and deep learning, with experience in implementing CNN and transformer models for real-world applications.</p>
-		  </div>   
-	   </div>   
-	</div>
-
-	<div class="row about-content">
-	   <div class="col-six tab-full">
-		  <h3>Profile</h3>
-		  <p>With hands-on experience in machine learning and software development, I bring expertise in implementing and optimizing ML models for production environments.</p>
-		  <ul class="info-list">
-			 <li>
-				<strong>Fullname:</strong>
-				<span>Ashwanth Kuppusamy</span>
-			 </li>
-			 <li>
-				<strong>Technical Skills:</strong>
-				<span>Machine Learning Engineer, Computer Vision, Deep Learning</span>
-			 </li>
-			 <li>
-				<strong>Soft Skills:</strong>
-				<span>Problem Solving, Analytical Thinking, Communication</span>
-			 </li>
-			 <li>
-				<strong>Email:</strong>
-				<span>kuppusaa@oregonstate.edu</span>
-			 </li>
-		  </ul>
-	   </div>
-
-	   <div class="col-six tab-full">
-		  <h3>Skills</h3>
-		  <p>Proficient in ML frameworks, CUDA optimization, and software development, equipped to deliver high-performance AI solutions.</p>
-		  <ul class="skill-bars">
-			 <li>
-				<div class="progress percent95"></div>
-				<strong>Python & ML Frameworks</strong>
-			 </li>
-			 <li>
-				<div class="progress percent90"></div>
-				<strong>Computer Vision & Deep Learning</strong>
-			 </li>
-			 <li>
-				<div class="progress percent85"></div>
-				<strong>CUDA & Performance Optimization</strong>
-			 </li>
-			 <li>
-				<div class="progress percent90"></div>
-				<strong>Software Development</strong>
-			 </li>
-		  </ul>
-	   </div>
-	</div>
-
-	<div class="row button-section">
-	   <div class="col-twelve">
-		  <a href="#contact" title="Hire Me" class="button stroke smoothscroll">Hire Me</a>
-		  <a href="Ashwanth Kuppusamy Resume.pdf" title="Download CV" class="button button-primary" target="_blank">Resume</a>
-	   </div>   
-	</div>
-  </section>
-
-   <!-- resume Section
-   ================================================== -->
-   <section id="resume" class="grey-section">
-	<div class="row section-intro">
-	   <div class="col-twelve">
-		  <h5 style="color: #3772ff;">Resume</h5>
-		  <h1>More of my credentials.</h1>
-		  <p class="lead">Extensive experience in machine learning, computer vision, and software optimization with a track record of delivering production-ready AI solutions.</p>
-	   </div>   
-	</div>
-
-	<div class="row resume-timeline">
-	   <div class="col-twelve resume-header">
-		  <h2 style="color: #3772ff;">Work Experience</h2>
-	   </div>
-
-	   <div class="col-twelve">
-		  <div class="timeline-wrap">
-			 <div class="timeline-block">
-				<div class="timeline-ico">
-				   <i class="fa fa-briefcase"></i>
-				</div>
-				<div class="timeline-header">
-				   <h3>Machine Learning Engineer</h3>
-				   <p>Oct 2024 - Present</p>
-				</div>
-				<div class="timeline-content">
-				   <h4>Microtec Inc</h4>
-				   <ul style="list-style-type: disc; margin-left: 20px;">
-					  <li>Implemented CNN and transformer models for multi-class lumber defect segmentation for 7 client projects</li>
-					  <li>Enhanced model robustness to lighting and sensor variations through channel-wise custom augmentations</li>
-					  <li>Optimized GPU memory handling in training through profiling studies, achieving a 4x increase in batch size</li>
-					  <li>Reduced labeling efforts by 75% while improving performance through strategic use of out-of-domain data</li>
-					  <li>Engineered custom CUDA kernels to optimize batch validation function complexity from O(n) to O(1)</li>
-					  <li>Developed effective fine-tuning techniques to enhance feature transfer from source to target domains</li>
-				   </ul>
-				</div>
-			 </div>
-
-			 <div class="timeline-block">
-				<div class="timeline-ico">
-				   <i class="fa fa-briefcase"></i>
-				</div>
-				<div class="timeline-header">
-				   <h3>Artificial Intelligence Intern</h3>
-				   <p>Jun 2024 - Sep 2024</p>
-				</div>
-				<div class="timeline-content">
-				   <h4>Microtec Inc</h4>
-				   <ul style="list-style-type: disc; margin-left: 20px;">
-					  <li>Conducted R&D and successfully implemented state-of-the-art CNN architecture, bringing it to production</li>
-					  <li>Created sampling strategies to address class imbalance, boosting IoU by 80% for underrepresented classes</li>
-					  <li>Developed specialized loss functions leading to a 90% reduction in false positive instances of wood defects</li>
-					  <li>Engineered multi-GPU training pipeline to achieve 4x faster training speeds and reduced development time</li>
-					  <li>Collaborated with senior engineers to develop custom metrics for better model selection and optimization</li>
-					  <li>Optimized models for deployment using ONNX and TensorRT, enhancing inference speed and efficiency</li>
-				   </ul>
-				</div>
-			 </div>
-
-			 <div class="timeline-block">
-				<div class="timeline-ico">
-				   <i class="fa fa-briefcase"></i>
-				</div>
-				<div class="timeline-header">
-				   <h3>Graduate Research Assistant</h3>
-				   <p>Mar 2024 - Present</p>
-				</div>
-				<div class="timeline-content">
-				   <h4>Oregon State University</h4>
-				   <ul style="list-style-type: disc; margin-left: 20px;">
-					  <li>Developed automated data pipeline converting system logs to provenance graphs for security analysis</li>
-					  <li>Trained graph neural network model to detect anomalies and malicious system activities in real-time</li>
-					  <li>Implemented various data preprocessing techniques to improve model performance and reliability</li>
-				   </ul>
-				</div>
-			 </div>
-
-			 <div class="timeline-block">
-				<div class="timeline-ico">
-				   <i class="fa fa-briefcase"></i>
-				</div>
-				<div class="timeline-header">
-				   <h3>Undergraduate Student Researcher</h3>
-				   <p>Jan 2023 - May 2023</p>
-				</div>
-				<div class="timeline-content">
-				   <h4>Amrita Vishwa Vidyapeetham</h4>
-				   <ul style="list-style-type: disc; margin-left: 20px;">
-					  <li>Designed an algorithm of O(n.log(n)) complexity to distribute inference load among multiple AI accelerators</li>
-					  <li>Developed an algorithm to determine computational complexity of deep learning models in IR format</li>
-					  <li>Wrote Linux scripts and modified code in C make files to resolve build issues in legacy software</li>
-				   </ul>
-				</div>
-			 </div>
-
-		  </div>
-	   </div>
-	</div>
-
-	<div class="row resume-timeline">
-	   <div class="col-twelve resume-header">
-		  <h2 style="color: #3772ff;">Education</h2>
-	   </div>
-
-	   <div class="col-twelve">
-		  <div class="timeline-wrap">
-			 <div class="timeline-block">
-				<div class="timeline-ico">
-				   <i class="fa fa-graduation-cap"></i>
-				</div>
-				<div class="timeline-header">
-				   <h3>Master of Science in Computer Science</h3>
-				   <p>Sep 2023 - Dec 2025</p>
-				</div>
-				<div class="timeline-content">
-				   <h4>Oregon State University</h4>
-				   <p>Focusing on Machine Learning, Computer Vision, and Deep Learning applications.</p>
-				</div>
-			 </div>
-
-			 <div class="timeline-block">
-				<div class="timeline-ico">
-				   <i class="fa fa-graduation-cap"></i>
-				</div>
-				<div class="timeline-header">
-				   <h3>Bachelor of Technology</h3>
-				   <p>Jul 2019 - Jun 2023</p>
-				</div>
-				<div class="timeline-content">
-				   <h4>Amrita Vishwa Vidyapeetham</h4>
-				   <p>Computer Science with focus on AI and Machine Learning.</p>
-				</div>
-			 </div>
-		  </div>
-	   </div>
-	</div>
- </section>
-
-
-
-	<!-- Portfolio Section
-   ================================================== -->
-	<section id="portfolio">
-
-		<div class="row section-intro">
-   		<div class="col-twelve">
-
-   			<h5 style="color: #3772ff;">Portfolio</h5>
-   			<h1>Check Out Some of My Works.</h1>
-
-   			<p class="lead">Lets dive into my portfolio of projects that showcase my problem-solving 
-				skills and innovative approach</p>
-
-   		</div>   		
-   	</div> <!-- /section-intro--> 
-
-   	<div class="row portfolio-content">
-
-   		<div class="col-twelve">
-
-   			<!-- portfolio-wrapper -->
-	         <div id="folio-wrapper" class="block-1-2 block-mob-full stack">
-
-	         	<div class="bgrid folio-item">
-	               	<img src="images/portfolio/bts.png" alt="Brain Tumor Segmentation">
-	                  <a href="https://github.com/ashwanth-07/Brain-Tumor-Segmentation/" class="overlay" target="_blank">	                  	           
-	                     <div class="folio-item-table">
-	                     	<div class="folio-item-cell">
-		     					       <h3 class="folio-title"> Computer Vision</h3>	     					    
-		     					    	 <span class="folio-types">
-											Brain Tumor Segmentation
-		     					       </span>
-		     					   </div>	                      	
-	                     </div>                    
-	                  </a>	               
-	        		</div> <!-- /folio-item -->
-
-	        		<div class="bgrid folio-item">
-					  <img src="images/portfolio/research.png" alt="Embedded AI">
-						<a href="https://ieeexplore.ieee.org/document/10306363/" class="overlay" target="_blank">	                  	           
-						   <div class="folio-item-table">
-							   <div class="folio-item-cell">
-										  <h3 class="folio-title">Edge Computing - AI</h3>	     					    
-											<span class="folio-types">
-												Research
-										  </span>
-									  </div>	                      	
-						   </div>                    
-						</a>	               
-	        		</div> <!-- /folio-item -->
-
-	            <div class="bgrid folio-item">
-					<img src="images/portfolio/e-library.png" alt="E-Library">
-					<a href="https://github.com/ashwanth-07/Department_Library_Automation" class="overlay" target="_blank">              		                  
-					  <div class="folio-item-table">
-						  <div class="folio-item-cell">
-							  <h3 class="folio-title">E-Library</h3>	     					    
-									  <span class="folio-types">
-										   Full Stack
-									</span>		     		
-								 </div> 	                      	
-					  </div>                    
-				   </a>
-	        		</div> <!-- /folio-item -->
-
-	            <div class="bgrid folio-item">
-	               	<img src="images/portfolio/crop_recm.png" alt="Crop Recommendation">
-	                  <a href="https://github.com/ashwanth-07/Intelligent_CropPrediction_System" class="overlay" target="_blank">                  	                 
-	                     <div class="folio-item-table">
-	                     	<div class="folio-item-cell">
-	                     		<h3 class="folio-title">Crop Recommendation</h3>	     					    
-		     					    	<span class="folio-types">
-		     					       	  Machine Learning
-		     					      </span>		     		
-		     					   </div>  	                      	
-	                     </div>                    
-	                  </a>
-	        		</div> <!-- /folio-item -->     
-
-	         </div> <!-- /portfolio-wrapper --> 
-
-   		</div>  <!-- /twelve -->   
-
-   	</div> <!-- /portfolio-content --> 
-		
-	</section> <!-- /portfolio --> 
-
-		
-   <!-- contact
-   ================================================== -->
-	<section id="contact">
-
-		<div class="row section-intro">
-   		<div class="col-twelve">
-
-   			<h5>Contact</h5>
-   			<h1>I would love to hear from you!.</h1>
-
-   			<p class="lead">Lets build challenging and impactful projects!</p>
-
-   		</div> 
-   	</div> <!-- /section-intro -->
-
-   	<div class="row contact-info">
-
-   		<div class="col-four tab-full">
-
-   			<div class="icon">
-   				<i class="icon-pin"></i>
-   			</div>
-
-   			<h5>Where to find me</h5>
-
-   			<p>
-            Corvallis, OR<br>
-            97003 US
-            </p>
-
-   		</div>
-
-   		<div class="col-four tab-full collapse">
-
-   			<div class="icon">
-   				<i class="icon-mail"></i>
-   			</div>
-
-   			<h5>Email Me At</h5>
-
-   			<p>kuppusaa@oregonstate.edu<br>
-			   	ash73041@gmail.com			     
-			   </p>
-
-   		</div>
-
-   		<div class="col-four tab-full">
-
-   			<div class="icon">
-   				<i class="icon-phone"></i>
-   			</div>
-
-   			<h5>Call Me At</h5>
-
-   			<p>Phone: (541) 286 2753</p>
-
-   		</div>
-   		
-   	</div> <!-- /contact-info -->
-		
-	</section> <!-- /contact -->
-
-
-   <!-- footer
-   ================================================== -->
-
-   <footer>
-     	<div class="row">
-
-     		<div class="col-six tab-full pull-right social">
-
-     			<ul class="footer-social">        
-                    <li><a href="https://www.linkedin.com/in/ashwanth-kuppusamy-b031b019a/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-                    <li><a href="https://github.com/ashwanth-07" target="_blank"><i class="fa fa-github"></i></a></li>
-                    <li><a href="#"><i class="fa fa-globe"></i></a></li>
-			   </ul> 
-	    </div>
-
-    
-	    <div id="go-top">
-		    <a class="smoothscroll" title="Back to Top" href="#top"><i class="fa fa-long-arrow-up"></i></a>
-		</div>
-
-      	</div> <!-- /row -->     	
-   </footer>  
-
-   <div id="preloader"> 
-    	<div id="loader"></div>
-   </div> 
-
-   <!-- Java Script
-   ================================================== --> 
-   <script src="js/jquery-2.1.3.min.js"></script>
-   <script src="js/plugins.js"></script>
-   <script src="js/main.js"></script>
-   <script>
-	$(document).ready(function() {
-	$("a").on('click', function(event) {
-
-		if (this.hash !== "") {
-		event.preventDefault();
-		var hash = this.hash;
-		
-		$('html, body').animate({
-			scrollTop: $(hash).offset().top
-		}, 700, function(){
-			window.location.hash = hash;
-		});
-		}
-	});
-	});
-   </script>
+            <h3 class="fw-bold mb-4" data-aos="fade-up" data-aos-delay="200">My Toolkit</h3>
+            <div class="row">
+                <div class="col-lg-10 mx-auto" data-aos="fade-up" data-aos-delay="300">
+                    <span class="tech-badge">Python</span>
+                    <span class="tech-badge">PyTorch</span>
+                    <span class="tech-badge">PySide6</span>
+                    <span class="tech-badge">OpenCV</span>
+                    <span class="tech-badge">Docker</span>
+                    <span class="tech-badge">Azure DevOps</span>
+                    <span class="tech-badge">Jenkins</span>
+                    <span class="tech-badge">Valohai MLOps</span>
+                    <span class="tech-badge">C++</span>
+                    <span class="tech-badge">SQL</span>
+                    <span class="tech-badge">Git</span>
+                    <span class="tech-badge">CUDA</span>
+                    <span class="tech-badge">ONNX</span>
+                    <span class="tech-badge">TensorRT</span>
+                    <span class="tech-badge">NumPy</span>
+                    <span class="tech-badge">Pandas</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="work-highlights" class="section-padding">
+        <div class="container text-center">
+            <h2 class="display-5 fw-bold mb-5" data-aos="fade-up">Professional Experience</h2>
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card h-100 text-start">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Automated Labeling Framework</h5>
+                            <p class="card-text flex-grow-1">Designed and deployed an automated system using object detectors and SAM, which cut labeling time by 50% (saving over $100,000) and scaled training on a dataset of over 300,000 images.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card h-100 text-start">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Assisted Labeling Tool</h5>
+                            <p class="card-text flex-grow-1">Architected and delivered an end-to-end assisted labeling tool with a PySide6 UI and SAM backend, doubling labeling throughput and replacing the legacy annotation tool across the organization.</p>
+                        </div>
+                    </div>
+                </div>
+                 <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card h-100 text-start">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Training & MLOps Enhancements</h5>
+                            <p class="card-text flex-grow-1">Reduced training data needs by 30% via pretraining, cut false positives by over 90% with negative instance mining, and built robust MLOps pipelines using Docker, Jenkins, and JFrog for seamless deployment.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section-padding">
+        <div class="container text-center">
+            <h2 class="display-5 fw-bold mb-5" data-aos="fade-up">Featured Projects</h2>
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card h-100 text-start">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Super-Resolution on Encrypted Images</h5>
+                            <p class="card-text flex-grow-1">My Master's thesis. Developed a two-stage pipeline to break thumbnail-preserving encryption, using SwinIR and a ControlNet-guided Stable Diffusion model to achieve a +73% SSIM and +33% PSNR improvement over baseline.</p>
+                            <div class="project-link">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card h-100 text-start">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">ConvMAE for QT-ViT</h5>
+                            <p class="card-text flex-grow-1">Architected an MAE-inspired pre-training for a hybrid convolution-transformer architecture, improving classification accuracy on ImageNet-100 from 78.6 to 80.18 on 12M parameter model through custom masked attention blocks and masked convolutions.</p>
+                             <div class="project-link">
+                                <a href="https://github.com/ashwanth-07/Conv-MAE" target="_blank" class="btn btn-outline-primary"><i class="fab fa-github me-2"></i>View Code</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card h-100 text-start">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Brain Tumor Segmentation</h5>
+                            <p class="card-text flex-grow-1">Investigated and developed an ensemble of 2D Attention-ResUNet architectures to improve IoU scores. Applied advanced data augmentation to mitigate overfitting on limited medical datasets, achieving a 0.8 IoU score.</p>
+                             <div class="project-link">
+                                <a href="https://github.com/ashwanth-07/Brain-Tumor-Segmentation" target="_blank" class="btn btn-outline-primary"><i class="fab fa-github me-2"></i>View Code</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section-padding">
+        <div class="container text-center" data-aos="fade-up">
+             <h2 class="display-5 fw-bold mb-3">Get In Touch</h2>
+             <p class="lead mb-4">I'm always open to discussing new projects, creative ideas, or opportunities. <br/> Feel free to reach out!</p>
+             <a href="mailto:kuppusaa@oregonstate.edu" class="btn btn-primary btn-lg mb-4">kuppusaa@oregonstate.edu</a>
+             <div class="social-icons">
+                <a href="https://www.linkedin.com/in/ashwanthkuppusamy/" target="_blank" aria-label="LinkedIn Profile"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/ashwanth-07" target="_blank" aria-label="GitHub Profile"><i class="fab fa-github"></i></a>
+             </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <script>
+        // Initialize AOS library
+        AOS.init({
+            duration: 800,
+            once: true,
+        });
+
+        // Initialize Typed.js
+        var options = {
+            strings: [
+                'Jr. Machine Learning Engineer',
+                'Computer Vision Specialist',
+            ],
+            typeSpeed: 50,
+            backSpeed: 25,
+            backDelay: 1500,
+            loop: true
+        };
+        var typed = new Typed('#typed-text', options);
+
+        // --- THEME TOGGLE SCRIPT (UPDATED FOR TOGGLE SWITCH) ---
+        const themeToggleCheckbox = document.getElementById('theme-toggle-checkbox');
+        const body = document.body;
+
+        const applyTheme = (theme) => {
+            if (theme === 'light') {
+                body.classList.add('light-mode');
+                if (themeToggleCheckbox) {
+                    themeToggleCheckbox.checked = true;
+                }
+            } else {
+                body.classList.remove('light-mode');
+                if (themeToggleCheckbox) {
+                    themeToggleCheckbox.checked = false;
+                }
+            }
+        };
+        
+        // Check for saved theme in localStorage or prefer system theme
+        const prefersLight = window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches;
+        const savedTheme = localStorage.getItem('theme');
+
+        if (savedTheme) {
+            applyTheme(savedTheme);
+        } else if (prefersLight) {
+            applyTheme('light');
+        } else {
+            applyTheme('dark');
+        }
+
+        // Add event listener for the toggle switch
+        if (themeToggleCheckbox) {
+            themeToggleCheckbox.addEventListener('change', (event) => {
+                const newTheme = event.target.checked ? 'light' : 'dark';
+                localStorage.setItem('theme', newTheme);
+                applyTheme(newTheme);
+            });
+        }
+    </script>
 
 </body>
-
 </html>
